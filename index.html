@@ -2,15 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <!-- Змінено джерело скрипта на Cloudflare, щоб обійти блокування MIME -->
-    <script src="https://cdnjs.cloudflare.com"></script>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <script src="https://cdn.jsdelivr.net"></script>
   </head>
-  <body>
-    <!-- Додано вбудований стиль, щоб сцена точно мала висоту -->
-    <a-scene style="height: 100vh; width: 100vw;">
+  <body style="margin: 0; overflow: hidden;">
+    <a-scene embedded style="height: 100vh; width: 100vw;">
       <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
+      <a-sky color="#222"></a-sky>
     </a-scene>
   </body>
 </html>
