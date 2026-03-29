@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Цей скрипт МАЄ бути тут -->
     <script src="https://aframe.io"></script>
   </head>
   <body>
-    <a-scene background="color: #222">
-      <!-- Просто синій куб замість моделі для тесту -->
-      <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9"
-             animation="property: rotation; to: 0 405 0; loop: true; dur: 5000"></a-box>
-      
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#111"></a-sky>
+    <a-scene>
+      <!-- Блакитний куб -->
+      <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
+      <!-- Підлога, щоб орієнтуватися в просторі -->
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="10" height="10" color="#7BC8A4"></a-plane>
+      <!-- Небо -->
+      <a-sky color="#ECECEC"></a-sky>
+      <!-- Камера -->
+      <a-camera position="0 1.6 0"></a-camera>
     </a-scene>
   </body>
 </html>
