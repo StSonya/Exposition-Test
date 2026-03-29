@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html>
   <head>
     <meta charset="utf-8">
-    <!-- Цей рядок обов'язковий для Glitch/GitHub -->
-    <script src="https://aframe.io"></script>
+    <!-- Змінено джерело скрипта на Cloudflare, щоб обійти блокування MIME -->
+    <script src="https://cdnjs.cloudflare.com"></script>
   </head>
   <body>
-    <!-- Якщо екран білий, спробуйте покрутити мишкою, можливо ви дивитесь не туди -->
-    <a-scene background="color: #ECECEC">
-      
-      <!-- Синій куб точно по центру -->
-      <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9" shadow></a-box>
-      
-      <!-- Зелена підлога -->
+    <!-- Додано вбудований стиль, щоб сцена точно мала висоту -->
+    <a-scene style="height: 100vh; width: 100vw;">
+      <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      
-      <a-camera position="0 1.6 0"></a-camera>
+      <a-sky color="#ECECEC"></a-sky>
     </a-scene>
   </body>
 </html>
