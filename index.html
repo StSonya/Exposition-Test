@@ -4,25 +4,13 @@
     <script src="https://aframe.io"></script>
   </head>
   <body>
-    <a-scene background="color: #111">
-      <!-- ЗАВАНТАЖУЄМО МОДЕЛЬ: замість vaza.glb напишіть назву свого файлу -->
-      <a-assets>
-        <a-asset-item id="myModel" src="vaza.glb"></a-asset-item>
-      </a-assets>
-
-      <!-- СТАВИМО МОДЕЛЬ: position (ліво/право, висота, вперед/назад) -->
+    <a-scene background="color: #222">
+      <!-- Просто синій куб замість моделі для тесту -->
+      <a-box position="0 1.5 -3" rotation="0 45 0" color="#4CC3D9"
+             animation="property: rotation; to: 0 405 0; loop: true; dur: 5000"></a-box>
       
-      
-
-      <!-- ПІДСТАВКА (ПОСТАМЕНТ) -->
-      <a-cylinder position="0 0.5 -3" radius="0.5" height="1" color="#333"></a-cylinder>
-
-      <!-- СВІТЛО (щоб не було темно) -->
-      <a-light type="ambient" intensity="0.7"></a-light>
-      <a-light type="directional" position="1 2 1" intensity="1"></a-light>
-
-      <!-- КАМЕРА (мишка - крутити, WASD - ходити) -->
-      <a-camera position="0 1.6 0"></a-camera>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#111"></a-sky>
     </a-scene>
   </body>
 </html>
